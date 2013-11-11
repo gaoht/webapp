@@ -1,0 +1,7 @@
+.idea/*
+META-INF/*
+WEB-INF/*
+node_module/*
+app.conf
+app.js
+favicon.ico

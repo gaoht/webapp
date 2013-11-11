@@ -1,0 +1,22 @@
+<div class="navbar navbar-fixed-top grc-navbar"  ng-controller="HeaderCtrl">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" ng-click="navIsCollapsed = !navIsCollapsed">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="index.html">
+                <span><img src="./assets/img/grc-brand.png"/></span>
+            </a>
+            <div class="nav-collapse in collapse" collapse="navIsCollapsed">
+                <form class="navbar-form pull-right grc-navbar-form">
+                    <div class="input-append">
+                        <input type="text" class="span2" placeholder="Keyword to search">
+                        <span class="add-on"><i class="icon-search"></i></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

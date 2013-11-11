@@ -1,0 +1,53 @@
+@media (max-width: 767px){
+  .span5 .form-signin{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: @navbarCollapseWidth){
+  body{
+    padding-top: @headerHeight+20; /*20+73*/
+  }
+}
+@media (max-width: @navbarCollapseWidth){
+  body{
+    padding-top: 0;
+  }
+  .grc-navbar.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding: 0 5px;
+  }
+  .grc-navbar .nav-collapse .navbar-form, .nav-collapse .navbar-search{
+    margin: 0;
+  }
+  .grc-navbar-form .input-append {
+    margin-top: 5px;
+  }
+  .grc-navbar.navbar .btn-navbar {
+    margin-top: 20px;
+  }
+  .grc-navbar .container .brand{
+    width: 255px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px){
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .grc-navbar-form .input-append{
+    width: 100%;
+    -moz-box-sizing: border-box;  /*Firefox3.5+*/
+    -webkit-box-sizing: border-box; /*Safari3.2+*/
+    -o-box-sizing: border-box; /*Opera9.6*/
+    -ms-box-sizing: border-box; /*IE8*/
+    box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+)*/
+    padding-right: 30px;
+  }
+  .grc-navbar-form .input-append .span2{
+    width: 100%;
+  }
+  #content-left{
+    border-right: 0;
+  }
+}

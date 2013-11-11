@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="GRC">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globalization Resource Center</title>
+    <link rel="stylesheet/less" type="text/css" href="less/stylesheet.less" />
+    <script src="vendor/less/less-1.3.3.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-ui/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="app/app.js"></script>
+    <script src="common/directives/project.js"></script>
+</head>
+<body ng-controller="AppCtrl">
+    <div ng-include="'app/header.tpl.html'" id="header"></div>
+    <div id="content">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span7" id="content-left">
+                    <div ng-controller="ProjectCtrl">
+                        <project-group projects="projects"></project-group>
+                    </div>
+                </div>
+                <div class="span5">
+                    <form class="form-signin">
+                        <h2 class="form-signin-heading">Please sign in</h2>
+                        <input type="text" class="input-block-level" placeholder="Email address">
+                        <input type="password" class="input-block-level" placeholder="Password">
+                        <label class="checkbox">
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="text-center" ng-include="'app/footer.tpl.html'"></div>
+</body>
+</html>
